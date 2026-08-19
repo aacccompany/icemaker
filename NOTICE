@@ -1,0 +1,25 @@
+IceMaker
+Copyright © 2026 AACC
+
+This product is a modified version of ThingsBoard
+(https://github.com/thingsboard/thingsboard), an open-source IoT platform.
+
+Original work:
+  Copyright © 2016-2026 The Thingsboard Authors
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  A copy of the License is available in the LICENSE file of this
+  distribution and at http://www.apache.org/licenses/LICENSE-2.0
+
+Modifications:
+  Substantial portions of this software — including product branding,
+  visual theming, and user-facing text throughout the web application
+  (ui-ngx) and select backend resources (email templates, startup
+  banner, default configuration strings) — have been changed by AACC
+  starting in 2026. Per-file copyright headers were updated to reflect
+  these changes; this NOTICE file is provided to additionally preserve
+  attribution to the original ThingsBoard project and its authors, as
+  required by Section 4 of the Apache License, Version 2.0.
+
+This product includes software developed by The Thingsboard Authors
+and other contributors to the ThingsBoard project.
