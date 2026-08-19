@@ -102,7 +102,7 @@ public class CassandraTsLatestToSqlMigrateService implements TsLatestMigrateServ
                 table.migrateToSql(cluster.getSession(), conn);
             }
         } catch (Exception e) {
-            log.error("Unexpected error during ThingsBoard entities data migration!", e);
+            log.error("Unexpected error during AACC entities data migration!", e);
             throw e;
         }
     }

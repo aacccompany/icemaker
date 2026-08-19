@@ -95,14 +95,14 @@ public class ThingsboardInstallService {
         try {
             if (isUpgrade) {
                 if ("cassandra-latest-to-postgres".equals(upgradeFromVersion)) {
-                    log.info("Migrating ThingsBoard latest timeseries data from cassandra to SQL database ...");
+                    log.info("Migrating AACC latest timeseries data from cassandra to SQL database ...");
                     latestMigrateService.migrate();
                 } else {
                     // TODO DON'T FORGET to update SUPPORTED_VERSIONS_FROM in DefaultDatabaseSchemaSettingsService
                     databaseSchemaVersionService.validateSchemaSettings();
                     String fromVersion = databaseSchemaVersionService.getDbSchemaVersion();
                     String toVersion = databaseSchemaVersionService.getPackageSchemaVersion();
-                    log.info("Upgrading ThingsBoard from version {} to {} ...", fromVersion, toVersion);
+                    log.info("Upgrading AACC from version {} to {} ...", fromVersion, toVersion);
                     cacheCleanupService.clearCache();
                     // Apply the schema_update.sql script. The script may include DDL statements to change structure
                     // of *existing* tables and DML statements to manipulate the DB records.
@@ -131,7 +131,7 @@ public class ThingsboardInstallService {
 
             } else {
 
-                log.info("Starting ThingsBoard Installation...");
+                log.info("Starting AACC Installation...");
 
                 log.info("Installing DataBase schema for entities...");
 
@@ -178,8 +178,8 @@ public class ThingsboardInstallService {
                 log.info("Installation finished successfully!");
             }
         } catch (Exception e) {
-            log.error("Unexpected error during ThingsBoard installation!", e);
-            throw new ThingsboardInstallException("Unexpected error during ThingsBoard installation!", e);
+            log.error("Unexpected error during AACC installation!", e);
+            throw new ThingsboardInstallException("Unexpected error during AACC installation!", e);
         } finally {
             SpringApplication.exit(context);
         }

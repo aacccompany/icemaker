@@ -1668,12 +1668,12 @@ swagger:
   # Nonsecurity API path match pattern of swagger UI links
   non_security_path_regex: "${SWAGGER_NON_SECURITY_PATH_REGEX:/api/(?:noauth|v1)/.*}"
   # The title on the API doc UI page
-  title: "${SWAGGER_TITLE:ThingsBoard REST API}"
+  title: "${SWAGGER_TITLE:AACC REST API}"
   # The description on the API doc UI page
-  description: "${SWAGGER_DESCRIPTION: ThingsBoard open-source IoT platform REST API documentation.}"
+  description: "${SWAGGER_DESCRIPTION: AACC open-source IoT platform REST API documentation.}"
   contact:
     # The contact name on the API doc UI page
-    name: "${SWAGGER_CONTACT_NAME:ThingsBoard team}"
+    name: "${SWAGGER_CONTACT_NAME:AACC team}"
     # The contact URL on the API doc UI page
     url: "${SWAGGER_CONTACT_URL:https://thingsboard.io}"
     # The contact email on the API doc UI page

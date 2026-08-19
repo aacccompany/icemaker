@@ -57,7 +57,7 @@ public class ThingsboardServerApplication {
     @AfterStartUp(order = Ordered.LOWEST_PRECEDENCE)
     public void afterStartUp() {
         long startupTimeMs = System.currentTimeMillis() - startTs;
-        log.info("Started ThingsBoard in {} seconds", TimeUnit.MILLISECONDS.toSeconds(startupTimeMs));
+        log.info("Started AACC in {} seconds", TimeUnit.MILLISECONDS.toSeconds(startupTimeMs));
     }
 
 }
