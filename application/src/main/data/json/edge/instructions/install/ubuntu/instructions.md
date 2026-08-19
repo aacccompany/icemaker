@@ -1,7 +1,7 @@
-Here is the list of commands that can be used to quickly install ThingsBoard Edge on Ubuntu Server and connect to the server.
+Here is the list of commands that can be used to quickly install IceMaker Edge on Ubuntu Server and connect to the server.
 
 #### Step 1. Install Java 17 (OpenJDK)
-ThingsBoard service is running on Java 17. To install OpenJDK 17, follow these instructions:
+IceMaker service is running on Java 17. To install OpenJDK 17, follow these instructions:
 
 ```bash
 sudo apt update && sudo apt install openjdk-17-jdk
@@ -30,11 +30,11 @@ OpenJDK Runtime Environment (...)
 OpenJDK 64-Bit Server VM (build ...)
 ```
 
-#### Step 2. Configure ThingsBoard Edge Database
+#### Step 2. Configure IceMaker Edge Database
 
-ThingsBoard Edge supports **SQL** and **hybrid** database configurations.
+IceMaker Edge supports **SQL** and **hybrid** database configurations.
 In this guide, we’ll use an **SQL** database.
-For more details about the hybrid setup, please refer to the official installation instructions on the <a href="https://thingsboard.io/docs/user-guide/install/edge/deb-installation/#step-2-configure-the-thingsboard-edge-database" target="_blank">ThingsBoard documentation site</a>.
+For more details about the hybrid setup, please refer to the official installation instructions on the <a href="https://thingsboard.io/docs/user-guide/install/edge/deb-installation/#step-2-configure-the-thingsboard-edge-database" target="_blank">IceMaker documentation site</a>.
 
 To install the PostgreSQL database, run these commands:
 
@@ -68,7 +68,7 @@ echo "CREATE DATABASE tb_edge;" | psql -U postgres -d postgres -h 127.0.0.1 -W
 {:copy-code}
 ```
 
-#### Step 3. ThingsBoard Edge Service Installation
+#### Step 3. IceMaker Edge Service Installation
 Download the installation package:
 
 ```bash
@@ -76,15 +76,15 @@ wget https://github.com/thingsboard/thingsboard-edge/releases/download/v${TB_EDG
 {:copy-code}
 ```
 
-Go to the download repository and install ThingsBoard Edge service:
+Go to the download repository and install IceMaker Edge service:
 
 ```bash
 sudo dpkg -i tb-edge-${TB_EDGE_TAG}.deb
 {:copy-code}
 ```
 
-#### Step 4. Configure ThingsBoard Edge
-To configure ThingsBoard Edge, you can use the following command to automatically update the configuration file with specific values:
+#### Step 4. Configure IceMaker Edge
+To configure IceMaker Edge, you can use the following command to automatically update the configuration file with specific values:
 
 ```bash
 sudo sh -c 'cat <<EOL >> /etc/tb-edge/conf/tb-edge.conf
@@ -112,9 +112,9 @@ EOL'
 * **PUT_YOUR_POSTGRESQL_PASSWORD_HERE**: Replace with your actual **PostgreSQL user password**.
 
 ##### [Optional] Update Bind Ports
-If ThingsBoard Edge runs on the same machine as the ThingsBoard Server, you need to update the port configuration to avoid conflicts between the two services.
+If IceMaker Edge runs on the same machine as the IceMaker Server, you need to update the port configuration to avoid conflicts between the two services.
 
-Please execute the following command to update ThingsBoard Edge configuration file (**/etc/tb-edge/conf/tb-edge.conf**):
+Please execute the following command to update IceMaker Edge configuration file (**/etc/tb-edge/conf/tb-edge.conf**):
 
 ```bash
 sudo sh -c 'cat <<EOL >> /etc/tb-edge/conf/tb-edge.conf
@@ -131,22 +131,22 @@ Make sure that ports **18080**, **11883**, and **15683–15688** are not being u
 
 #### Step 5. Run Installation Script
 
-Once ThingsBoard Edge is installed and configured, please execute the following installation script:
+Once IceMaker Edge is installed and configured, please execute the following installation script:
 
 ```bash
 sudo /usr/share/tb-edge/bin/install/install.sh
 {:copy-code}
 ```
 
-#### Step 6. Start ThingsBoard Edge Service
+#### Step 6. Start IceMaker Edge Service
 
 ```bash
 sudo service tb-edge start
 {:copy-code}
 ```
 
-#### Step 7. Open ThingsBoard Edge UI
+#### Step 7. Open IceMaker Edge UI
 
 Once the Edge service has started, open the Edge web interface at http://localhost:8080, or http://localhost:18080 if you modified the HTTP bind port configuration in the previous step.
 
-Log in using your **tenant credentials** from either your local ThingsBoard Server or the **ThingsBoard Live Demo**.
+Log in using your **tenant credentials** from either your local IceMaker Server or the **IceMaker Live Demo**.

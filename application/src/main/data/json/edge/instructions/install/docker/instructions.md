@@ -1,17 +1,17 @@
-Here is the list of commands that can be used to quickly install ThingsBoard Edge using docker compose and connect to the server.
+Here is the list of commands that can be used to quickly install IceMaker Edge using docker compose and connect to the server.
 
 #### Prerequisites
 
 Install <a href="https://docs.docker.com/engine/install/" target="_blank"> Docker CE</a> and <a href="https://docs.docker.com/compose/install/" target="_blank"> Docker Compose</a>.
 
-#### Step 1. Create the ThingsBoard Edge Docker Compose file
+#### Step 1. Create the IceMaker Edge Docker Compose file
 
-ThingsBoard Edge supports both **in-memory** and **Kafka** queues for message storage and communication between ThingsBoard services.
+IceMaker Edge supports both **in-memory** and **Kafka** queues for message storage and communication between IceMaker services.
 It also supports **SQL** and **hybrid** database configurations.
 In this guide, we’ll use the **in-memory** queue and an **SQL** database.
-For more details about the hybrid setup, please refer to the official installation instructions on the <a href="https://thingsboard.io/docs/user-guide/install/edge/docker/#step-2-choose-queue-andor-database-services" target="_blank">ThingsBoard documentation site</a>.
+For more details about the hybrid setup, please refer to the official installation instructions on the <a href="https://thingsboard.io/docs/user-guide/install/edge/docker/#step-2-choose-queue-andor-database-services" target="_blank">IceMaker documentation site</a>.
 
-Now, create a Docker Compose file for the ThingsBoard Edge service:
+Now, create a Docker Compose file for the IceMaker Edge service:
 
 ```bash
 nano docker-compose.yml
@@ -62,7 +62,7 @@ volumes:
 ```
 
 ##### [Optional] Update Bind Ports
-If ThingsBoard Edge runs on the same machine as the ThingsBoard Server, you need to update the port configuration to avoid conflicts between the two services.
+If IceMaker Edge runs on the same machine as the IceMaker Server, you need to update the port configuration to avoid conflicts between the two services.
 
 Make sure that ports **18080**, **11883**, and **15683–15688** are not being used by any other applications.
 
@@ -73,16 +73,16 @@ sed -i 's/8080:8080/18080:8080/; s/1883:1883/11883:1883/; s/5683-5688:5683-5688\
 {:copy-code}
 ```
 
-#### Step 2. Start ThingsBoard Edge
-Navigate to the directory containing the `docker-compose.yml` file and run the following command to start the ThingsBoard Edge service:
+#### Step 2. Start IceMaker Edge
+Navigate to the directory containing the `docker-compose.yml` file and run the following command to start the IceMaker Edge service:
 
 ```bash
 docker compose up -d && docker compose logs -f mytbedge
 {:copy-code}
 ```
 
-#### Step 3. Open ThingsBoard Edge UI
+#### Step 3. Open IceMaker Edge UI
 
 Once the Edge service has started, open the Edge web interface at http://localhost:8080, or http://localhost:18080 if you modified the HTTP bind port configuration in the previous step.
 
-Log in using your **tenant credentials** from either your local ThingsBoard Server or the **ThingsBoard Live Demo**.
+Log in using your **tenant credentials** from either your local IceMaker Server or the **IceMaker Live Demo**.

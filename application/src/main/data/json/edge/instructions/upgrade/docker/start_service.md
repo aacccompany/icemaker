@@ -1,4 +1,4 @@
-Modify ‘main’ docker compose (`docker-compose.yml`) a file for ThingsBoard Edge and update a version of the image:
+Modify ‘main’ docker compose (`docker-compose.yml`) a file for IceMaker Edge and update a version of the image:
 ```bash
 nano docker-compose.yml
 {:copy-code}

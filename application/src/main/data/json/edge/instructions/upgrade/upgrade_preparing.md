@@ -1,8 +1,8 @@
-Here is the list of commands that can be used to quickly upgrade ThingsBoard Edge on ${OS}
+Here is the list of commands that can be used to quickly upgrade IceMaker Edge on ${OS}
 
-#### Prepare for Upgrading ThingsBoard Edge
+#### Prepare for Upgrading IceMaker Edge
 
-Stop ThingsBoard Edge service:
+Stop IceMaker Edge service:
 
 ```bash
 sudo systemctl stop tb-edge

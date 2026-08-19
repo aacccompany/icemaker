@@ -1,5 +1,5 @@
 {
-  "title": "ThingsBoard IoT Gateways",
+  "title": "IceMaker IoT Gateways",
   "image": "tb-image;/api/images/system/gateway-dashboard.png",
   "mobileHide": false,
   "mobileOrder": 6,
@@ -8967,6 +8967,6 @@
       "dashboardCss": ""
     }
   },
-  "name": "ThingsBoard IoT Gateways",
+  "name": "IceMaker IoT Gateways",
   "resources": null
 }

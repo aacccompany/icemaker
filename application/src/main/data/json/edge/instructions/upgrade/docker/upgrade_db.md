@@ -1,4 +1,4 @@
-Create a docker compose file for ThingsBoard Edge upgrade process:
+Create a docker compose file for IceMaker Edge upgrade process:
 
 ```bash
 > docker-compose-upgrade.yml && nano docker-compose-upgrade.yml
