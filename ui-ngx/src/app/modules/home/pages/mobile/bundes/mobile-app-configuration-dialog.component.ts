@@ -1,5 +1,5 @@
 ///
-/// Copyright © 2016-2026 The Thingsboard Authors
+/// Copyright © 2016-2026 The IceMaker Authors
 ///
 /// Licensed under the Apache License, Version 2.0 (the "License");
 /// you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ export class MobileAppConfigurationDialogComponent extends DialogComponent<Mobil
   notShowAgain = false;
   showDontShowAgain: boolean;
 
-  gitRepositoryLink = 'git clone -b master https://github.com/thingsboard/flutter_thingsboard_app.git';
+  gitRepositoryLink = 'git clone -b master https://github.com/icemaker/flutter_icemaker_app.git';
   flutterRunCommand = `flutter run --dart-define-from-file ${this.fileName}.json`;
 
   constructor(protected store: Store<AppState>,
@@ -73,20 +73,20 @@ export class MobileAppConfigurationDialogComponent extends DialogComponent<Mobil
 
   downloadSettings(): void {
     const settings: any = {
-      thingsboardApiEndpoint: window.location.origin,
+      icemakerApiEndpoint: window.location.origin,
       appLinksUrlHost: window.location.host,
       appLinksUrlScheme: window.location.protocol.slice(0, -1),
     };
     if (!!this.data.androidApp) {
       settings.androidApplicationId = this.data.androidApp.pkgName;
       settings.androidApplicationName = isNotEmptyStr(this.data.androidApp.title) ? this.data.androidApp.title : this.data.bundle.title;
-      settings.thingsboardOAuth2CallbackUrlScheme = this.data.androidApp.pkgName + '.auth';
-      settings.thingsboardAndroidAppSecret = this.data.androidApp.appSecret;
+      settings.icemakerOAuth2CallbackUrlScheme = this.data.androidApp.pkgName + '.auth';
+      settings.icemakerAndroidAppSecret = this.data.androidApp.appSecret;
     }
     if (!!this.data.iosApp) {
       settings.iosApplicationId = this.data.iosApp.pkgName;
       settings.iosApplicationName = isNotEmptyStr(this.data.iosApp.title) ? this.data.iosApp.title : this.data.bundle.title;
-      settings.thingsboardIosAppSecret = this.data.iosApp.appSecret;
+      settings.icemakerIosAppSecret = this.data.iosApp.appSecret;
     }
     this.importExportService.exportJson(settings, this.fileName);
   }

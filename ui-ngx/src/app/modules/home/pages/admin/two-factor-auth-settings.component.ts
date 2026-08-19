@@ -1,5 +1,5 @@
 ///
-/// Copyright © 2016-2026 The Thingsboard Authors
+/// Copyright © 2016-2026 The IceMaker Authors
 ///
 /// Licensed under the Apache License, Version 2.0 (the "License");
 /// you may not use this file except in compliance with the License.
@@ -235,7 +235,7 @@ export class TwoFactorAuthSettingsComponent extends PageComponent implements OnI
     };
     switch (provider) {
       case TwoFactorAuthProviderType.TOTP:
-        formControlConfig.issuerName = [{value: 'ThingsBoard', disabled: true}, [Validators.required, Validators.pattern(/^(?!^\s+$).*$/)]];
+        formControlConfig.issuerName = [{value: 'IceMaker', disabled: true}, [Validators.required, Validators.pattern(/^(?!^\s+$).*$/)]];
         break;
       case TwoFactorAuthProviderType.SMS:
         formControlConfig.smsVerificationMessageTemplate = [{value: 'Verification code: ${code}', disabled: true}, [

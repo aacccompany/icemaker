@@ -1,6 +1,6 @@
 <!--
 
-    Copyright © 2016-2026 The Thingsboard Authors
+    Copyright © 2016-2026 The IceMaker Authors
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
       <h2 tbTruncateWithTooltip>{{ 'version-control.restore-entity-from-version' | translate: {versionName} }}</h2>
       <span class="flex-1"></span>
     </mat-toolbar>
-    <mat-progress-bar color="warn" style="z-index: 10; width: 100%; margin-bottom: -4px;" mode="indeterminate"
+    <mat-progress-bar color="accent" style="z-index: 10; width: 100%; margin-bottom: -4px;" mode="indeterminate"
                       [class.hidden]="(isLoading$ | async) === false">
     </mat-progress-bar>
     <form [formGroup]="restoreFormGroup" style="padding-top: 16px;">

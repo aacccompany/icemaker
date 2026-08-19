@@ -1,5 +1,5 @@
 ///
-/// Copyright © 2016-2026 The Thingsboard Authors
+/// Copyright © 2016-2026 The IceMaker Authors
 ///
 /// Licensed under the Apache License, Version 2.0 (the "License");
 /// you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 ///
 
 export const environment = {
-  appTitle: 'ThingsBoard',
+  appTitle: 'IceMaker',
   production: true,
 // @ts-ignore
   tbVersion: TB_VERSION,

@@ -1,5 +1,5 @@
 ///
-/// Copyright © 2016-2026 The Thingsboard Authors
+/// Copyright © 2016-2026 The IceMaker Authors
 ///
 /// Licensed under the Apache License, Version 2.0 (the "License");
 /// you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ export enum InstallMethod {
   DIRECT_COAP = 'DIRECT_COAP',
   DIRECT_LWM2M = 'DIRECT_LWM2M',
   DIRECT_SNMP = 'DIRECT_SNMP',
-  // ThingsBoard IoT Gateway connectors
+  // IceMaker IoT Gateway connectors
   GATEWAY_MQTT = 'GATEWAY_MQTT',
   GATEWAY_MODBUS = 'GATEWAY_MODBUS',
   GATEWAY_OPCUA = 'GATEWAY_OPCUA',
@@ -39,7 +39,7 @@ export enum InstallMethod {
   GATEWAY_XMPP = 'GATEWAY_XMPP',
   // ChirpStack (CE-compatible LoRaWAN integration)
   CHIRPSTACK = 'CHIRPSTACK',
-  // ThingsBoard PE integrations (CE shows "PE only" gate)
+  // IceMaker PE integrations (CE shows "PE only" gate)
   INTEGRATION_APACHE_PULSAR = 'INTEGRATION_APACHE_PULSAR',
   INTEGRATION_AWS_IOT = 'INTEGRATION_AWS_IOT',
   INTEGRATION_AWS_KINESIS = 'INTEGRATION_AWS_KINESIS',

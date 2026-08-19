@@ -1,6 +1,6 @@
 <!--
 
-    Copyright © 2016-2026 The Thingsboard Authors
+    Copyright © 2016-2026 The IceMaker Authors
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 <div class="tb-two-factor-auth-login-content mat-app-background tb-dark flex flex-col items-center justify-center"
      style="width: 100%;">
   @if (isLoading$ | async) {
-    <mat-progress-bar color="warn" class="progress-bar" mode="indeterminate"></mat-progress-bar>
+    <mat-progress-bar color="accent" class="progress-bar" mode="indeterminate"></mat-progress-bar>
   }
   @switch (state()) {
     @case (ForceTwoFAState.SETUP) {

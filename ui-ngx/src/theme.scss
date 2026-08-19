@@ -1,5 +1,5 @@
 /**
- * Copyright © 2016-2026 The Thingsboard Authors
+ * Copyright © 2016-2026 The IceMaker Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,8 +56,41 @@ $tb-mat-indigo: (
   )
 );
 
+$tb-mat-yellow: (
+  50: mix(white, $tb-accent-color, 88%),
+  100: mix(white, $tb-accent-color, 70%),
+  200: mix(white, $tb-accent-color, 50%),
+  300: mix(white, $tb-accent-color, 30%),
+  400: mix(white, $tb-accent-color, 15%),
+  500: $tb-accent-color,
+  600: mix(black, $tb-accent-color, 13%),
+  700: mix(black, $tb-accent-color, 30%),
+  800: mix(black, $tb-accent-color, 46%),
+  900: mix(black, $tb-accent-color, 75%),
+  A100: mix(white, $tb-accent-color, 70%),
+  A200: mix(white, $tb-accent-color, 50%),
+  A400: $tb-accent-color,
+  A700: mix(black, $tb-accent-color, 30%),
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: rgba(black, 0.87),
+    600: rgba(black, 0.87),
+    700: rgba(black, 0.87),
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: rgba(black, 0.87),
+    A400: rgba(black, 0.87),
+    A700: rgba(black, 0.87),
+  )
+);
+
 $tb-primary: mat.m2-define-palette($tb-mat-indigo);
-$tb-accent: mat.m2-define-palette(mat.$m2-deep-orange-palette);
+$tb-accent: mat.m2-define-palette($tb-mat-yellow);
 
 $tb-mat-theme: mat.m2-define-light-theme((
   color: (

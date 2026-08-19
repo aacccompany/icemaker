@@ -1,5 +1,5 @@
 ///
-/// Copyright © 2016-2026 The Thingsboard Authors
+/// Copyright © 2016-2026 The IceMaker Authors
 ///
 /// Licensed under the Apache License, Version 2.0 (the "License");
 /// you may not use this file except in compliance with the License.
@@ -248,7 +248,7 @@ export class DashboardPageComponent extends PageComponent implements IDashboardC
   editingWidgetSubtitle: string = null;
   editingLayoutCtx: DashboardPageLayoutContext = null;
 
-  thingsboardVersion: string = env.tbVersion;
+  icemakerVersion: string = env.tbVersion;
 
   translatedDashboardTitle: string;
 

@@ -1,6 +1,6 @@
 <!--
 
-    Copyright © 2016-2026 The Thingsboard Authors
+    Copyright © 2016-2026 The IceMaker Authors
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
         <div class="flex flex-col items-center justify-start" style="padding: 16px 0;">
           <tb-logo link="https://thingsboard.io" target="_blank" class="login-logo"></tb-logo>
         </div>
-        <mat-progress-bar color="warn" mode="indeterminate" *ngIf="isLoading || (isLoading$ | async)">
+        <mat-progress-bar color="accent" mode="indeterminate" *ngIf="isLoading || (isLoading$ | async)">
         </mat-progress-bar>
         <span style="height: 4px;" *ngIf="!isLoading && !(isLoading$ | async)"></span>
         <span tb-toast style="height: 20px;"></span>
