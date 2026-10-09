@@ -6258,7 +6258,7 @@
         "help-link-base-url": "Bazowy adres URL linków pomocy",
         "ui-help-base-url": "Bazowy adres URL pomocy interfejsu użytkownika",
         "enable-help-links": "Włącz linki pomocy",
-        "error-verification-url": "Nazwa domeny nie powinna zawierać symboli „/” i „:”. Przykład: thingsboard.io",
+        "error-verification-url": "Nazwa domeny nie powinna zawierać symboli „/” i „:”. Przykład: aacc-ai.com",
         "show-platform-name-version": "Pokaż nazwę i wersję platformy",
         "platform-name": "Nazwa platformy",
         "platform-version": "Wersja platformowa",

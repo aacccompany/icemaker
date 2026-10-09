@@ -209,7 +209,7 @@
         "domain-name": "Domeinnaam",
         "domain-name-unique": "Domeinnaam en protocol moeten uniek zijn.",
         "domain-name-max-length": "Domeinnaam moet kleiner zijn dan 256 tekens tekens",
-        "error-verification-url": "Een domeinnaam mag geen symbolen '/' en ':' bevatten. Voorbeeld: thingsboard.io",
+        "error-verification-url": "Een domeinnaam mag geen symbolen '/' en ':' bevatten. Voorbeeld: aacc-ai.com",
         "oauth2": {
             "access-token-uri": "Toegangstoken URI",
             "access-token-uri-required": "De URI van het toegangstoken is vereist.",
@@ -5804,7 +5804,7 @@
         "help-link-base-url": "Help-links basis-url",
         "ui-help-base-url": "Help-basis-URL van de gebruikersinterface",
         "enable-help-links": "Helpkoppelingen inschakelen",
-        "error-verification-url": "Een domeinnaam mag geen symbolen '/' en ':' bevatten. Voorbeeld: thingsboard.io",
+        "error-verification-url": "Een domeinnaam mag geen symbolen '/' en ':' bevatten. Voorbeeld: aacc-ai.com",
         "show-platform-name-version": "Platformnaam en -versie weergeven",
         "platform-name": "Naam van het platform",
         "platform-version": "Platform versie",

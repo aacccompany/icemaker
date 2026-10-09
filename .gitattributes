@@ -1,0 +1,3 @@
+docker/**/*.sh text eol=lf
+docker/**/*.env text eol=lf
+docker/**/*.conf text eol=lf

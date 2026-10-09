@@ -189,7 +189,7 @@
         "domain-name": "Nom de domini",
         "domain-name-unique": "El nom de domini i protocol ha de ser únic.",
         "domain-name-max-length": "El nom del domini ha de ser inferior a 256",
-        "error-verification-url": "Un nom de domini no ha de contenir símbols '/' i ':'. Exemple: thingsboard.io",
+        "error-verification-url": "Un nom de domini no ha de contenir símbols '/' i ':'. Exemple: aacc-ai.com",
         "oauth2": {
             "access-token-uri": "URI Access token",
             "access-token-uri-required": "Es requereix URI Access token.",
@@ -4705,7 +4705,7 @@
         "help-link-base-url": "URL base dels enllaços d'ajuda",
         "ui-help-base-url": "URL de la base d'ajuda de la IU",
         "enable-help-links": "Activa els enllaços d'ajuda",
-        "error-verification-url": "Un nom de domini no ha de contenir els símbols '/' i ':'. Exemple: thingsboard.io",
+        "error-verification-url": "Un nom de domini no ha de contenir els símbols '/' i ':'. Exemple: aacc-ai.com",
         "show-platform-name-version": "Mostra el nom i la versió de la plataforma",
         "platform-name": "Nom de la plataforma",
         "platform-version": "Versió de plataforma",

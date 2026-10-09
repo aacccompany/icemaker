@@ -877,7 +877,7 @@
                     <configuration>
                         <header>${main.dir}/license-header-template.txt</header>
                         <properties>
-                            <owner>The Thingsboard Authors</owner>
+                            <owner>The IceMaker Authors</owner>
                         </properties>
                         <excludes>
                             <exclude>**/.env</exclude>

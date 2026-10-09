@@ -18,7 +18,7 @@ IceMaker is developed and maintained by [AACC](https://aacc-ai.com). It is built
 
 ## 🚀 Getting started
 
-This is an internally maintained, rebranded deployment. Reach out to your AACC contact for build, installation, and access instructions.
+This is an internally maintained, rebranded deployment. For self-hosted Docker installation and setup steps, see [docker/README.md](./docker/README.md). Reach out to your AACC contact for build, access, and any other instructions.
 
 ## 🫶 Support
 

@@ -317,7 +317,7 @@
           <div #framePanel class="tb-split tb-content" style="overflow-y: hidden; position: relative;">
             <div class="mat-content tb-progress-cover flex flex-1 flex-col items-center justify-center"
                  *ngIf="!iframeWidgetEditModeInited">
-              <mat-spinner diameter="100" mode="indeterminate" color="warn"></mat-spinner>
+              <mat-spinner diameter="100" mode="indeterminate" color="accent"></mat-spinner>
             </div>
             <div tb-fullscreen [fullscreen]="iFrameFullscreen" style="width: 100%; height: 100%;">
               <iframe #widgetIFrame style="border: 0;" height="100%" width="100%"></iframe>

@@ -232,7 +232,7 @@
         "domain-name": "اسم النطاق",
         "domain-name-unique": "يجب أن يكون اسم النطاق والبروتوكول فريدين.",
         "domain-name-max-length": "يجب أن يكون اسم النطاق أقل من 256",
-        "error-verification-url": "لا ينبغي أن يحتوي اسم النطاق على الرموز '/' و ':'. مثال: thingsboard.io",
+        "error-verification-url": "لا ينبغي أن يحتوي اسم النطاق على الرموز '/' و ':'. مثال: aacc-ai.com",
         "connection-settings": "إعدادات الاتصال",
         "oauth2": {
             "access-token-uri": "عنوان URI لرمز الوصول",
@@ -6364,7 +6364,7 @@
         "help-link-base-url": "عناوين مساعدة الروابط الأساسية",
         "ui-help-base-url": "عنوان URL الأساسي للمساعدة في واجهة المستخدم",
         "enable-help-links": "تمكين روابط المساعدة",
-        "error-verification-url": "لا يجب أن يحتوي اسم النطاق على الرموز '/' و ':' . مثال: thingsboard.io",
+        "error-verification-url": "لا يجب أن يحتوي اسم النطاق على الرموز '/' و ':' . مثال: aacc-ai.com",
         "show-platform-name-version": "عرض اسم المنصة والإصدار",
         "platform-name": "اسم المنصة",
         "platform-version": "إصدار المنصة",
