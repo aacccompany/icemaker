@@ -1,0 +1,15 @@
+{
+  "name": "icemaker-device-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Manual test bridge: relays telemetry from a LEAFTECH CloudMeter device's USB serial debug output into IceMaker over MQTT. Not a production integration — see T2 in the AA&CC Ice maker WebApps backlog.",
+  "main": "bridge.js",
+  "scripts": {
+    "start": "node bridge.js"
+  },
+  "dependencies": {
+    "@serialport/parser-readline": "^13.0.0",
+    "mqtt": "^5.16.0",
+    "serialport": "^13.0.0"
+  }
+}
